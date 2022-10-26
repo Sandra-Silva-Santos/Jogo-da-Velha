@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    font-family: 'Henny Penny', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    background-image: url(../img/velha.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.quadrado {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    background: #eee;
+    display: inline-block;
+    padding: 0.3rem;
+    font-size: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+div .quadrado {
+    background-origin: padding-box;
+    color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 1px rgb(146, 146, 146),
+        10px 10px 10px rgba(70, 70, 70, 0.12);
+
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Creepster', cursive;
+    font-family: 'Henny Penny', cursive;
+    font-weight: 700;
+}
+
+.jogador,
+.vencedor {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(0, 132, 255, 0.253);
+    cursor: pointer;
+}

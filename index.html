@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo da Velha">
+    <title>Jogo da Velha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>
+        JOGO DA VELHA
+    </h1>
+
+    <div>
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div class="jogador">
+        <label>
+            É a vez do Jogador :
+        </label>
+        <label id="jogador-selecionado" style=>
+
+        </label>
+    </div>
+
+    <div class="vencedor">
+        <label>
+            O Vencedor é o jogador :
+        </label>
+        <label id="vencedor-selecionado">
+
+        </label>
+    </div>
+
+    <div>
+        <button onclick="reiniciar()">
+            Reiniciar
+        </button>
+    </div>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
