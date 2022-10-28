@@ -1,19 +1,25 @@
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-family: 'Creepster', cursive;
     font-family: 'Henny Penny', cursive;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     background-image: url(../img/velha.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position-x: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 20px;
+
 }
 
 .quadrado {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     text-align: center;
     background: #eee;
     display: inline-block;
@@ -24,7 +30,6 @@ body {
 }
 
 div .quadrado {
-    background-origin: padding-box;
     color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     box-shadow: 5px 5px 5px 1px rgb(146, 146, 146),
@@ -33,24 +38,99 @@ div .quadrado {
 }
 
 label {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Creepster', cursive;
     font-family: 'Henny Penny', cursive;
     font-weight: 700;
 }
 
-.jogador,
-.vencedor {
-    font-size: 30px;
+.jogador {
+    font-size: 25px;
     margin-top: 10px;
 }
 
 button {
-    margin-top: 20px;
+    margin: 20px;
     width: 100px;
     height: 35px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
-    background: rgba(0, 132, 255, 0.253);
+    background: rgb(244, 252, 128);
     cursor: pointer;
+    font-family: 'Henny Penny', cursive;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 250%;
+    }
+
+    .quadrado {
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        margin: calc(1% - 2px);
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .jogador {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    button {
+        margin: 5px;
+        width: 100px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:359px) {
+    body {
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 275%;
+    }
+
+    .quadrado {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        margin: calc(1% - 1px);
+
+
+    }
+
+    h1 {
+        font-size: 15px;
+        margin: 16px;
+    }
+
+    label {
+        font-size: 10px;
+
+    }
+
+    button {
+        margin: 2px;
+        width: 100px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    .jogador {
+        font-size: 10px;
+        margin-top: 10px;
+    }
 }
