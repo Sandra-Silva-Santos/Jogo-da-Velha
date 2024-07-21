@@ -103,13 +103,13 @@ function mudaCorQuadrado(quadrado1, quadrado2, quadrado3) {
 }
 
 function checaSequencia(quadrado1, quadrado2, quadrado3) {
-    var eigual = false;
+    var igual = false;
 
     if (quadrado1.innerHTML !== '-' && quadrado1.innerHTML === quadrado2.innerHTML && quadrado2.innerHTML === quadrado3.innerHTML) {
-        eigual = true;
+        igual = true;
     }
 
-    return eigual;
+    return igual;
 }
 
 function reiniciar() {
@@ -125,3 +125,4 @@ function reiniciar() {
 
     mudarJogador('X');
 }
+

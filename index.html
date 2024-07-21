@@ -13,51 +13,56 @@
 
 <body>
 
-    <h1>
-        JOGO DA VELHA
-    </h1>
+    <main class="container">
+        <h1>
+            JOGO DA VELHA
+        </h1>
 
-    <div>
-        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    </div>
+        <div class="tabuleiro">
+            <div>
+                <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            </div>
 
-    <div>
-        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    </div>
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            </div>
 
-    <div>
-        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    </div>
+            <div>
+                <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            </div>
+        </div>
 
-    <div class="jogador">
-        <label>
-            É a vez do Jogador :
-        </label>
-        <label id="jogador-selecionado" style=>
 
-        </label>
-    </div>
+        <div class="jogador">
+            <label>
+                É a vez do Jogador :
+            </label>
+            <label id="jogador-selecionado" style=>
 
-    <div class="vencedor">
-        <label>
-            O Vencedor é o jogador :
-        </label>
-        <label id="vencedor-selecionado">
+            </label>
+        </div>
 
-        </label>
-    </div>
+        <div class="vencedor">
+            <label>
+                O Vencedor é o jogador :
+            </label>
+            <label id="vencedor-selecionado">
 
-    <div>
-        <button onclick="reiniciar()">
-            Reiniciar
-        </button>
-    </div>
+            </label>
+        </div>
+
+        <div>
+            <button onclick="reiniciar()">
+                Reiniciar
+            </button>
+        </div>
+    </main>
 
 </body>
 

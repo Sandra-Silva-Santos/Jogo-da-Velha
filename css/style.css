@@ -1,30 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Creepster', cursive;
     font-family: 'Henny Penny', cursive;
-    font-weight: 700;
-    font-size: 12px;
     background-image: url(../img/velha.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
 
-h1 {
-    font-size: 28px;
-    margin: 20px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+h1 {
+    font-size: 1.75rem;
+    margin: 20px;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:  1rem;
 }
 
 .quadrado {
-    width: 55px;
-    height: 55px;
+    width: 4.5rem;
+    height: 4.5rem;
     text-align: center;
     background: #eee;
     display: inline-block;
     padding: 0.3rem;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 5px;
     cursor: pointer;
 }
@@ -38,99 +52,30 @@ div .quadrado {
 }
 
 label {
-    font-size: 16px;
-    font-family: 'Creepster', cursive;
+    font-size: 1rem;
     font-family: 'Henny Penny', cursive;
     font-weight: 700;
 }
 
-.jogador {
-    font-size: 25px;
-    margin-top: 10px;
+.jogador, .vencedor {
+    font-size: 1.5rem;
 }
 
 button {
     margin: 20px;
     width: 100px;
     height: 35px;
-    font-size: 18px;
+    font-size: 1.1rem;
     border-radius: 5px;
     background: rgb(244, 252, 128);
     cursor: pointer;
     font-family: 'Henny Penny', cursive;
 }
 
-@media screen and (max-width:700px) {
-    body {
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-size: 250%;
-    }
-
-    .quadrado {
-        width: 40px;
-        height: 40px;
-        font-size: 40px;
-        margin: calc(1% - 2px);
-    }
-
-    h1 {
-        font-size: 20px;
-        margin: 15px;
-    }
-
-    label {
-        font-size: 12px;
-    }
-
-    .jogador {
-        font-size: 10px;
-        margin-top: 5px;
-    }
-
-    button {
-        margin: 5px;
-        width: 100px;
-        height: 25px;
-        font-size: 14px;
-    }
+button:hover {
+    background: rgb(244, 252, 128);
+    box-shadow: 5px 5px 5px 1px rgb(146, 146, 146),
+        10px 10px 10px rgba(70, 70, 70, 0.12);
 }
 
-@media screen and (max-width:359px) {
-    body {
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-size: 275%;
-    }
 
-    .quadrado {
-        width: 30px;
-        height: 30px;
-        font-size: 30px;
-        margin: calc(1% - 1px);
-
-
-    }
-
-    h1 {
-        font-size: 15px;
-        margin: 16px;
-    }
-
-    label {
-        font-size: 10px;
-
-    }
-
-    button {
-        margin: 2px;
-        width: 100px;
-        height: 22px;
-        font-size: 12px;
-    }
-
-    .jogador {
-        font-size: 10px;
-        margin-top: 10px;
-    }
-}
